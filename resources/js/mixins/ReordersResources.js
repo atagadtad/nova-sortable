@@ -13,7 +13,7 @@ export default {
   methods: {
     async updateOrder(event) {
       this.reorderLoading = true;
-      console.log('hello');
+
       try {
         await Nova.request().post(`/nova-vendor/nova-sortable/sort/${this.resourceName}/update-order`, {
           resourceId: null,
