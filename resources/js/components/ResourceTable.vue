@@ -34,7 +34,6 @@
     <draggable v-model="resources" tag="tbody" handle=".handle" @update="updateOrder">
       <tr
         v-for="(resource, index) in resources"
-        @click="testLog()"
         @actionExecuted="$emit('actionExecuted')"
         :testId="`${resourceName}-items-${index}`"
         :key="resource.id.value"
@@ -122,10 +121,6 @@ export default {
   }),
 
   methods: {
-    testLog() {
-      console.log('hello');
-    }
-
     /**
      * Delete the given resource.
      */
