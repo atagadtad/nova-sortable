@@ -713,7 +713,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 return _this.refreshResourcesList();
 
               case 6:
-                console.log('hello');
+                console.log('hello??');
                 Nova.success(_this.__('novaSortable.reorderSuccessful'));
                 _context.next = 18;
                 break;
